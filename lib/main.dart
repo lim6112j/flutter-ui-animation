@@ -145,34 +145,34 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 200.0,
                       color: Colors.green,
                     )),
-                    PhotoHero(
-                      photo: 'images/cat.jpg',
-                      width:300.0,
-                      onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) {
-                              return Scaffold(
-                                appBar: AppBar(
-                                  title: const Text('Flippers Page'),
-                                ),
-                                body: Container(
-                                  color: Colors.lightBlueAccent,
-                                  padding: const EdgeInsets.all(16.0),
-                                  alignment: Alignment.topLeft,
-                                  child: PhotoHero(
-                                    photo: 'images/cat.jpg',
-                                    width: 100.0,
-                                    onTap: () {
-                                      Navigator.of(context).pop();
-                                    },
-                                  ),
-                                ),
-                              );
-                            },
-                          ));
-              
-                      },
-                    )
+                PhotoHero(
+                  photo: 'images/cat.jpg',
+                  width:100.0,
+                  onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) {
+                          return Scaffold(
+                            appBar: AppBar(
+                              title: const Text('Flippers Page'),
+                            ),
+                            body: Container(
+                              color: Colors.lightBlueAccent,
+                              padding: const EdgeInsets.all(16.0),
+                              alignment: Alignment.topLeft,
+                              child: PhotoHero(
+                                photo: 'images/cat.jpg',
+                                width: 300.0,
+                                onTap: () {
+                                  Navigator.of(context).pop();
+                                },
+                              ),
+                            ),
+                          );
+                        },
+                      ));
+          
+                  },
+                )
               ],
             ),
           ],
